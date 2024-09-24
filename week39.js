@@ -30,9 +30,9 @@ for (let index = 0; index < people.length; index++) {
 console.log("Task: A");
 
 const tall = [1, 2, 3, 4, 5];
-let sum = 0;
+let sum = tall[0];
 
-for (i = 0; i < tall.length; i++) {
+for (i = 1; i < tall.length; i++) {
     sum += tall[i];
 }
 console.log(sum);
@@ -86,9 +86,16 @@ console.log("Task: D");
 function differansier(liste) {
 
     /* What should go here?? */
+    let differans = liste[0];
+
+    for (i = 1; i < liste.length; i++) {
+    differans -= liste[i];
+    }
+    return differans;
 }
 
 const diff = differansier(andreTall);
+console.log(diff);
 
 if (diff === -18) {
     console.log("🎉 Task D is most likely correct");
@@ -102,3 +109,16 @@ if (diff === -18) {
     Create a function named "multipliser." This function should take (as a parameter) a list of numbers.
     The function should return the product of the numbers (i.e., tal1 * tal2 * tal3 * ... and so on).
 */
+console.log("Task: E")
+
+function multipliser(liste) {
+    let multipli = liste[0];
+    for (i = 1; i < liste.length; i++) {
+        multipli *= liste[i];
+    }
+    return multipli;
+}
+
+const multiplied = multipliser(andreTall);
+
+console.log(multiplied);
