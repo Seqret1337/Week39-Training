@@ -30,7 +30,12 @@ for (let index = 0; index < people.length; index++) {
 console.log("Task: A");
 
 const tall = [1, 2, 3, 4, 5];
+let sum = 0;
 
+for (i = 0; i < tall.length; i++) {
+    sum += tall[i];
+}
+console.log(sum);
 
 /* -----------------------------------------------------------------------------
     Task: B
@@ -40,14 +45,17 @@ const tall = [1, 2, 3, 4, 5];
 console.log("Task: B");
 
 function summer(liste) {
-
     /* What should go here?? */
-
+    let sum = 0;
+    for (i = 0; i < liste.length; i++) {
+        sum += liste[i];
+    }
+    return sum;
 }
 
-const sum = summer(tall);
-
-if (sum === 15) {
+const sumB = summer(tall);
+console.log(sumB);
+if (sumB === 15) {
     console.log("🎉 Task B is most likely correct");
 } else {
     console.log("😱 Task B has some issues, but you can fix it 👍");
@@ -61,9 +69,13 @@ if (sum === 15) {
 */
 console.log("Task: C");
 
-const andreTall = [6, 7, 8, 9]
+const andreTall = [6, 7, 8, 9];
+let differans = andreTall[0];
 
-
+for (i = 1; i < andreTall.length; i++) {
+    differans -= andreTall[i];
+}
+console.log(differans);
 /* -----------------------------------------------------------------------------
     Task: D
     Below is a function "differansier," which is incomplete; it should return the difference of the numbers it receives in a list.
