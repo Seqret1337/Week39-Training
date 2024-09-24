@@ -46,8 +46,8 @@ console.log("Task: B");
 
 function summer(liste) {
     /* What should go here?? */
-    let sum = 0;
-    for (i = 0; i < liste.length; i++) {
+    let sum = tall[0];
+    for (i = 1; i < liste.length; i++) {
         sum += liste[i];
     }
     return sum;
